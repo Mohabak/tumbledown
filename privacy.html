@@ -57,7 +57,7 @@
 
 <main class="wrap">
   <h1>Privacy Policy</h1>
-  <p class="date">Last updated: 26 October 2026 · applies to Tumbledown! for iPhone from version 1.1, and to this website</p>
+  <p class="date">Last updated: 27 October 2026 · applies to Tumbledown! for iPhone from version 1.1, and to this website</p>
 
   <div class="card short">
     <h2>The short version</h2>
@@ -65,8 +65,9 @@
       an occasional ad between levels. The ads come from two advertising partners, <strong>Google</strong> (Google
       AdMob) and <strong>Unity</strong> (Unity Ads, which offers its ads through Google AdMob). Their code in the app
       collects information about your device and the ads you see, to show and measure ads. If you allow it when iOS asks, they may also use your device's
-      advertising identifier to show you more personal ads. The game starts their code after your first win, with the
-      privacy questions first; Google's part of it may already contact Google when the app opens
+      advertising identifier to show you more personal ads. The game starts their code when you first open it, on its main
+      screen before you play a level, with the privacy questions first; Google's part of it may already contact Google
+      when the app opens
       (<a href="#ad-code">section 3</a>).</p>
     <p>We, the developer, have no server and no account system. The game's own code sends nothing anywhere (iOS's anonymous ad
       attribution aside, section 3), and we receive no personal data about you from the game. Your progress stays on your iPhone. Purchases are handled by
@@ -111,12 +112,14 @@
       after the video. From level 20, an ad sometimes plays between levels (after you leave the result screen), never
       during a level. There are no banner ads.</p>
     <p id="ad-code"><strong>When the ad code runs.</strong> The partners' code is built into the app. The game starts
-      it only after you win a level for the first time with version 1.1 or later (on a new install, or after updating
-      from 1.0). Then, in this order: Google's consent code asks Google's servers which privacy questions apply where
-      you are (this shows Google your IP address) and shows them; iOS asks the tracking question (section 4); and only
+      it the first time you open version 1.1 or later (on a new install, or after updating from 1.0), on the game's main
+      screen after the start screen, before you play a level. Then, in this order: Google's consent code asks Google's servers which privacy questions apply where
+      you are (this shows Google your IP address) and shows them; iOS asks the tracking question (section 4; not if you
+      refused in Google's consent form); and only
       then, and only if your answers allow ads to be requested, Google's ad code starts and asks for ads. Google's ad
-      code starts Unity's. After that, the game does the same each time you open the app (without the tracking
-      question, which iOS asks only once), so that a video is ready when you want one.</p>
+      code starts Unity's. After that, the game does the same each time you open the app, so that a video is ready
+      when you want one. iOS asks the tracking question only once; if it could not ask yet (for example, because
+      tracking requests were off in your iPhone's Settings), it may ask when you next open the game.</p>
     <p>Because it is built in, Google's code also does some work of its own each time the app opens, even before the
       game starts it and before the privacy questions: it prepares its own storage on your iPhone and it may connect to
       Google's servers. In our own tests of a new install, it looked up the internet address of a Google server
@@ -175,12 +178,13 @@
 
     <h2 id="choices">4. Your choices</h2>
     <ul>
-      <li><strong>Tracking (all countries).</strong> After your first win (with version 1.1 or later), iOS asks whether
+      <li><strong>Tracking (all countries).</strong> When you first open the game (version 1.1 or later), on its main
+        screen before you play a level, iOS asks whether
         Tumbledown! may track your activity across other companies' apps and websites ("Allowing tracking lets us show
         you ads that are more relevant to you."). Outside Europe, the UK and Switzerland, Google may first show a short
         explanation of this question. If you tap <em>Ask App Not to Track</em>, the partners cannot use your advertising
         identifier and may not track you; you still see ads, but they are less personal. Nothing in the game depends on your answer: no
-        reward, nothing locked. To change it later: your iPhone's Settings → Privacy &amp; Security → Tracking. Outside
+        reward, nothing locked. To change it later (once iOS has asked): your iPhone's Settings → Privacy &amp; Security → Tracking. Outside
         Europe, the UK and Switzerland, the game's Settings → <strong>Privacy Choices</strong> opens your iPhone's
         Settings app and reminds you of the way there: Privacy &amp; Security → Tracking. If "Allow
         Apps to Request to Track" is off on your iPhone, the question never appears and the app is treated as not
@@ -191,8 +195,9 @@
         lists (it is a consent tool certified under the IAB Transparency and Consent Framework). You can accept
         (<em>Consent</em>), refuse with one tap (<em>Do not consent</em>), or choose purpose by purpose (<em>Manage
         options</em>). To change your answer at any time: the game's Settings →
-        <strong>Privacy Choices</strong>, which shows the form again. If you refuse, the partners may still show
-        non-personalised or limited ads, as the form describes.</li>
+        <strong>Privacy Choices</strong>, which shows the form again. If you refuse (<em>Do not consent</em>, or
+        storing and accessing information on your device turned off), the game does not ask iOS's tracking question, and
+        the partners may still show non-personalised or limited ads, as the form describes.</li>
       <li><strong>Inside an ad.</strong> Many ads show an "i" or privacy icon. In Google's ads it explains why you see
         the ad and leads to your ad settings with Google (<a href="https://myadcenter.google.com/">My Ad Center</a>). In
         Unity's ads, the Data Privacy icon lets you opt out of some of Unity's personalised ads and see or delete the
